@@ -288,7 +288,7 @@ void 修改某个编号的全部信息(FILE *f, struct Bookslist *h)
 			scanf("%s", &h->书名);
 			getchar();
 			printf("请输入价格\n");
-			scanf("%f", &h->价格);
+			scanf("%lf", &h->价格);
 			getchar();
 			fwrite(h, sizeof(struct Bookslist), 1, fffp);
 		}

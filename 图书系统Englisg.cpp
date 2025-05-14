@@ -288,7 +288,7 @@ void changed_bianhaoxingxi(FILE *f, struct Bookslist *h)
 			scanf("%s", &h->booksname);
 			getchar();
 			printf("ÇëÊäÈë¼Û¸ñ\n");
-			scanf("%f", &h->price);
+			scanf("%lf", &h->price);
 			getchar();
 			fwrite(h, sizeof(struct Bookslist), 1, fffp);
 		}
